@@ -2,7 +2,7 @@ import { prisma } from "@/db";
 import { redirect } from "next/navigation";
 
 // for todo List pages:
-export const getTodos = () => prisma.todo.findMany();
+export const getTodoList = () => prisma.todo.findMany();
 
 export const toggleItem = async (id: string, complete: boolean) => {
   "use server";

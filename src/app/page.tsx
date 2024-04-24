@@ -1,9 +1,9 @@
 import TodoItem from "./components/TodoItem";
-import { toggleItem, getTodos, deleteItem } from "./request";
+import { toggleItem, getTodoList, deleteItem } from "./request";
 import Header from "./components/Header";
 
 const Home = async () => {
-  const todoList = await getTodos();
+  const todoList = await getTodoList();
   return (
     <>
       <Header />

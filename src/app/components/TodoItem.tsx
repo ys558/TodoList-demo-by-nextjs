@@ -1,4 +1,6 @@
 "use client";
+import { DELETE_ITEM_BUTTON_TEXT } from "../const";
+
 type TodoItemProps = {
   id: string;
   title: string;
@@ -31,7 +33,7 @@ const TodoItem = ({
         onClick={() => deleteItem(id)}
         role="button"
       >
-        ❌
+        {DELETE_ITEM_BUTTON_TEXT}
       </div>
     </li>
   );
